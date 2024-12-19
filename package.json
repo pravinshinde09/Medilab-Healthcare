@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-google-maps/api": "^2.20.3",
     "cra-template": "1.2.0",
+    "emailjs-com": "^3.2.0",
+    "file-saver": "^2.0.5",
+    "formik": "^2.4.6",
     "i18next": "^24.1.2",
+    "leaflet": "^1.9.4",
     "react": "^18.3.1",
+    "react-animate-on-scroll": "^2.1.9",
+    "react-bootstrap": "^2.10.7",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.2.0",
+    "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+    "react-toastify": "^11.0.1",
+    "web-vitals": "^4.2.4",
+    "xlsx": "^0.18.5",
+    "yup": "^1.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
