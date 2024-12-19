@@ -27,13 +27,13 @@ const ContactForm = () => {
       message: Yup.string().required("This Field Is Required"),
     }),
     onSubmit: (values, { resetForm }) => {
-      console.log('value:', values)
+      console.log("value:", values);
       emailjs
         .send(
-          "service_ral2mn9",
-          "template_2plhftb",
+          "service_z07p69h",
+          "template_7r99869",
           values,
-          "-xOlH7xwHAmY0Atbk"
+          "02WrA4sEvKW4loTY3"
         )
         .then(
           (result) => {
@@ -107,8 +107,10 @@ const ContactForm = () => {
         <div className="text-danger">
           {formik.touched.message && formik.errors.message}
         </div>
-        <button type="submit" style={{cursor:"pointer"}}>Submit</button>
-        <ToastContainer/>
+        <button type="submit" style={{ cursor: "pointer" }}>
+          Submit
+        </button>
+        <ToastContainer />
       </form>
     </>
   );

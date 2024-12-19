@@ -27,7 +27,8 @@ const CorporateForm = () => {
         .required("Email Id is required")
         .matches(/^[a-zA-Z0-9+.]+@[a-zA-Z0-9.-]+$/, "Email Id  is not valid")
         .nullable(true),
-      phone: Yup.string().required("This Field Is Required")
+      phone: Yup.string()
+        .required("This Field Is Required")
         .matches(/^(0|[+91]{3})?[7-9][0-9]{9}$/, "Mobile Is Not Valid"),
       message: Yup.string(),
     }),
@@ -35,10 +36,10 @@ const CorporateForm = () => {
       // setDisable(false);
       emailjs
         .send(
-          "service_ral2mn9",
-          "template_2plhftb",
+          "service_z07p69h",
+          "template_7r99869",
           values,
-          "-xOlH7xwHAmY0Atbk"
+          "02WrA4sEvKW4loTY3"
         )
         .then(
           (result) => {
@@ -73,16 +74,16 @@ const CorporateForm = () => {
   });
 
   const downloadBrochure = () => {
-    fetch('Medilab Brochure R.pdf').then(response => {
-      response.blob().then(blob => {
+    fetch("Medilab Brochure R.pdf").then((response) => {
+      response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement('a');
+        let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = 'Medilab Brochure R.pdf';
+        alink.download = "Medilab Brochure R.pdf";
         alink.click();
-      })
-    })
-  }
+      });
+    });
+  };
 
   return (
     <>
@@ -145,7 +146,16 @@ const CorporateForm = () => {
           {formik.touched.message && formik.errors.message}
         </div>
         <div className="text-right pb-0">
-          <button  type="submit" className="product_type_simple text-center" style={{ cursor: "pointer" }} >Submit<i className="fa fa-download" style={{ marginLeft: "0.5rem" }}>&nbsp;</i></button>
+          <button
+            type="submit"
+            className="product_type_simple text-center"
+            style={{ cursor: "pointer" }}
+          >
+            Submit
+            <i className="fa fa-download" style={{ marginLeft: "0.5rem" }}>
+              &nbsp;
+            </i>
+          </button>
         </div>
       </form>
     </>

@@ -33,10 +33,10 @@ const PersonalForm = () => {
       // setDisable(false);
       emailjs
         .send(
-          "service_ral2mn9",
-          "template_2plhftb",
+         "service_z07p69h",
+          "template_7r99869",
           values,
-          "-xOlH7xwHAmY0Atbk"
+          "02WrA4sEvKW4loTY3"
         )
         .then(
           (result) => {
