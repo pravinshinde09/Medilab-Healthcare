@@ -6,7 +6,6 @@ import { CartProvider } from './context/cart';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-  // const { pathname } = useLocation();
   return (
     <div>
       <BrowserRouter>
