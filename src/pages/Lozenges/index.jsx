@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import Banner from "./Banner";
+import LozengesCard from "./LozengesCard";
+import IndustryVideo from "./IndustryVideo";
 
-const index = () => {
+const Lozenges = () => {
   return (
     <div>
-      Test
+      <Banner/>
+      <LozengesCard/>
+      <IndustryVideo/>
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default Lozenges;

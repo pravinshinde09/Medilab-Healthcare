@@ -10,6 +10,7 @@ import ProductDetails from "../pages/product/productDetails/ProductDetails";
 import Product from "../pages/product/product/Product";
 import Career from "../pages/Career";
 import QualityPolicy from "../pages/QualityPolicy";
+import Lozenges from "../pages/Lozenges";
 
 export const RoutePath = {
   home: "/",
@@ -23,12 +24,17 @@ export const RoutePath = {
   cart: "/cart",
   career: "/career",
   qualityPolicy: "/quality-policy",
+  lozenges: "/lozenges",
 };
 
 export const PageHeaderLinks = [
   {
     label: "Home",
     to: RoutePath.home,
+  },
+  {
+    label: "Lozenges",
+    to: RoutePath.lozenges,
   },
   {
     label: "Products",
@@ -90,6 +96,11 @@ export const RoutePaths = [
   {
     component: Home,
     path: RoutePath.home,
+    exact: true,
+  },
+  {
+    component: Lozenges,
+    path: RoutePath.lozenges,
     exact: true,
   },
   {
