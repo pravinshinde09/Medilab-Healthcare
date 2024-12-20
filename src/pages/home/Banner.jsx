@@ -18,8 +18,8 @@ const Banner = () => {
 											<div className="intro_layers">
 												<ScrollAnimation animateIn="fadeIn" initiallyVisible={true} duration={2}>
 													<div className="intro_layer">
-														<h2 className="text-capitalize intro_featured_word">
-															<span className="color-main-title">Medilab&nbsp;</span>
+														<h2 className="text-capitalize intro_featured_word" style={{fontSize:'40px'}}>
+															<span className="color-main-title" >Medilab&nbsp;</span>
 															Healthcare Pvt Ltd
 														</h2>
 														<p className="intro_after_featured_word text-sm-left">

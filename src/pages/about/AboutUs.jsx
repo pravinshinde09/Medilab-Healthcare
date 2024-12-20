@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../home/About";
+import About from "./About"
 import Why_ChooseUS from "./Why_ChooseUS";
 import Gallery from "./Gallery";
 import LocationMap from "./LocationMap";
