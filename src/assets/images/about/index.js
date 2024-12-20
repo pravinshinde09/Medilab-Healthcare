@@ -1,4 +1,4 @@
-import Branch_1 from './paithan.jpg';
+import Branch_1 from './industry.jpg';
 import Map from './map.webp';
 import b14 from './b14.jpg';
 
