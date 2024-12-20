@@ -1,15 +1,15 @@
-import Home from '../pages/home/Home';
-import AboutUs from '../pages/about/AboutUs';
-import ContactUs from '../pages/Contact/ContactUs';
-import GlobalPresence from '../pages/globalPresence/GlobalPresence';
-import CorporateSocialResponsibility from '../pages/CorporateSocialResponsibility';
-import ContractManufacturing from '../pages/partnership/ContractManufacturing';
-import Partnership from '../pages/partnership/Partnership';
-import Carts from '../context/cart/Carts';
-import ProductDetails from '../pages/product/productDetails/ProductDetails';
-import Product from '../pages/product/product/Product';
-import Career from '../pages/Career';
-import QualityPolicy from '../pages/QualityPolicy';
+import Home from "../pages/home/Home";
+import AboutUs from "../pages/about/AboutUs";
+import ContactUs from "../pages/Contact/ContactUs";
+import GlobalPresence from "../pages/globalPresence/GlobalPresence";
+import CorporateSocialResponsibility from "../pages/CorporateSocialResponsibility";
+import ContractManufacturing from "../pages/partnership/ContractManufacturing";
+import Partnership from "../pages/partnership/Partnership";
+import Carts from "../context/cart/Carts";
+import ProductDetails from "../pages/product/productDetails/ProductDetails";
+import Product from "../pages/product/product/Product";
+import Career from "../pages/Career";
+import QualityPolicy from "../pages/QualityPolicy";
 
 export const RoutePath = {
   home: "/",
@@ -22,8 +22,8 @@ export const RoutePath = {
   contractManufacturing: "/contact-manufacturing",
   cart: "/cart",
   career: "/career",
-  qualityPolicy:"/quality-policy"
-}
+  qualityPolicy: "/quality-policy",
+};
 
 export const PageHeaderLinks = [
   {
@@ -31,35 +31,12 @@ export const PageHeaderLinks = [
     to: RoutePath.home,
   },
   {
-    label: "About Us",
-    to: RoutePath.aboutUs,
-    isNested: true,
-    nestedPaths: [
-      {
-        label: "Company",
-        to: RoutePath.aboutUs
-      },
-      {
-        label: "CSR",
-        to: RoutePath.corporateSocialResponsibility
-      },
-      {
-        label: "QualityPolicy",
-        to: RoutePath.qualityPolicy
-      },
-      // {
-      //   label: "Career",
-      //   to: RoutePath.career
-      // }
-    ]
-  },
-  {
     label: "Products",
-    to: RoutePath.product
+    to: RoutePath.product,
   },
   {
     label: "Global Presence",
-    to: RoutePath.globalPresence
+    to: RoutePath.globalPresence,
   },
   // {
   //   label: "CSR",
@@ -72,19 +49,42 @@ export const PageHeaderLinks = [
     nestedPaths: [
       {
         label: "Contact Manufacturing",
-        to: RoutePath.contractManufacturing
+        to: RoutePath.contractManufacturing,
       },
       {
         label: "Partnership",
-        to: RoutePath.partnership
+        to: RoutePath.partnership,
       },
-    ]
+    ],
   },
   {
-    label: "Contact Us",
-    to: RoutePath.contact
-  }
-]
+    label: "About Us",
+    to: RoutePath.aboutUs,
+    isNested: true,
+    nestedPaths: [
+      {
+        label: "Company",
+        to: RoutePath.aboutUs,
+      },
+      {
+        label: "CSR",
+        to: RoutePath.corporateSocialResponsibility,
+      },
+      // {
+      //   label: "QualityPolicy",
+      //   to: RoutePath.qualityPolicy
+      // },
+      {
+        label: "Contact Us",
+        to: RoutePath.contact,
+      },
+      // {
+      //   label: "Career",
+      //   to: RoutePath.career
+      // }
+    ],
+  },
+];
 
 export const RoutePaths = [
   {
@@ -95,56 +95,56 @@ export const RoutePaths = [
   {
     component: AboutUs,
     path: RoutePath.aboutUs,
-    exact: true
+    exact: true,
   },
   {
     component: ContactUs,
     path: RoutePath.contact,
-    exact: true
+    exact: true,
   },
   {
     component: GlobalPresence,
     path: RoutePath.globalPresence,
-    exact: true
+    exact: true,
   },
   {
     component: CorporateSocialResponsibility,
     path: RoutePath.corporateSocialResponsibility,
-    exact: true
+    exact: true,
   },
   {
     component: Product,
     path: RoutePath.product,
-    exact: true
+    exact: true,
   },
   {
     component: ProductDetails,
-    path: '/product/:id',
-    exact: true
+    path: "/product/:id",
+    exact: true,
   },
   {
     component: ContractManufacturing,
     path: RoutePath.contractManufacturing,
-    exact: true
+    exact: true,
   },
   {
     component: Partnership,
     path: RoutePath.partnership,
-    exact: true
+    exact: true,
   },
   {
     component: Carts,
     path: RoutePath.cart,
-    exact: true
+    exact: true,
   },
   {
     component: QualityPolicy,
     path: RoutePath.qualityPolicy,
-    exact: true
+    exact: true,
   },
   {
     component: Career,
     path: RoutePath.career,
-    exact: true
-  }
+    exact: true,
+  },
 ];

@@ -13,7 +13,11 @@ const PageHeader = () => {
       <div className="container px-xl-50">
         <div className="row align-items-center">
           <div className="col-xl-3 col-lg-3 col-md-4 col-sm-8 col-12">
-            <a href={RoutePath.home} className="logo" style={{ textDecoration: "none" }}>
+            <a
+              href={RoutePath.home}
+              className="logo"
+              style={{ textDecoration: "none" }}
+            >
               <img src={Images.Logo} alt="img" />
             </a>
           </div>
@@ -26,9 +30,13 @@ const PageHeader = () => {
                     <li
                       className={
                         `/${splitLocation[1]}` === item.to ? "active" : ""
-                      } id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                      }
+                      id="navbarDarkDropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <Link to={item.to} >{item.label}</Link>
+                      <Link to={item.to}>{item.label}</Link>
 
                       {isNested && item.label === "Partner" ? (
                         <ul className="page-header-dropdown">
@@ -38,7 +46,11 @@ const PageHeader = () => {
                                 ? "active"
                                 : ""
                             }
-                            class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            class="nav-link"
+                            id="navbarDarkDropdownMenuLink"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
                           >
                             <Link to={RoutePath.contractManufacturing}>
                               Contract Manufacturing
@@ -53,34 +65,43 @@ const PageHeader = () => {
                           </li>
                         </ul>
                       ) : (
-                        ''
+                        ""
                       )}
                       {isNested && item.label === "About Us" ? (
                         <ul className="page-header-dropdown">
                           <li
                             className={
-                              splitLocation[1] === "about"
-                                ? "active"
-                                : ""
+                              splitLocation[1] === "about" ? "active" : ""
                             }
                           >
-                            <Link to={RoutePath.aboutUs} >
-                              About Us
-                            </Link>
+                            <Link to={RoutePath.aboutUs}>About Us</Link>
                           </li>
                           <li
                             className={
                               splitLocation[1] === "csr" ? "active" : ""
                             }
                           >
-                            <Link to={RoutePath.corporateSocialResponsibility}>CSR</Link>
+                            <Link to={RoutePath.corporateSocialResponsibility}>
+                              CSR
+                            </Link>
                           </li>
                           <li
                             className={
-                              splitLocation[1] === "qualityPolicy" ? "active" : ""
+                              splitLocation[1] === "qualityPolicy"
+                                ? "active"
+                                : ""
                             }
                           >
-                            <Link to={RoutePath.qualityPolicy}>Quality Policy</Link>
+                            <Link to={RoutePath.qualityPolicy}>
+                              Quality Policy
+                            </Link>
+                          </li>
+                          <li
+                            className={
+                              splitLocation[1] === "ContactUs" ? "active" : ""
+                            }
+                          >
+                            <Link to={RoutePath.contact}>Contact Us</Link>
                           </li>
                           {/* <li
                             className={
@@ -91,7 +112,7 @@ const PageHeader = () => {
                           </li> */}
                         </ul>
                       ) : (
-                        ''
+                        ""
                       )}
                     </li>
                   );
@@ -99,10 +120,10 @@ const PageHeader = () => {
               </ul>
             </nav>
           </div>
-      </div>
+        </div>
       </div>
       {/* <!-- header toggler --> */}
-      <span className="toggle_menu" >
+      <span className="toggle_menu">
         <span></span>
         <nav className="top-nav">
           <ul className="nav sf-menu">
@@ -110,11 +131,15 @@ const PageHeader = () => {
               const { isNested = false, nestedPaths = [] } = item;
               return (
                 <li
-                  className={
-                    `/${splitLocation[1]}` === item.to ? "active" : ""
-                  } id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  className={`/${splitLocation[1]}` === item.to ? "active" : ""}
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  <Link to={item.to} ><a>{item.label}</a></Link>
+                  <Link to={item.to}>
+                    <a>{item.label}</a>
+                  </Link>
 
                   {isNested && item.label === "Partner" ? (
                     <ul className="page-header-dropdown">
@@ -124,7 +149,11 @@ const PageHeader = () => {
                             ? "active"
                             : ""
                         }
-                        class="nav-link" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        class="nav-link"
+                        id="navbarDarkDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                       >
                         <Link to={RoutePath.contractManufacturing}>
                           Contract Manufacturing
@@ -139,27 +168,21 @@ const PageHeader = () => {
                       </li>
                     </ul>
                   ) : (
-                    ''
+                    ""
                   )}
                   {isNested && item.label === "About Us" ? (
                     <ul className="page-header-dropdown">
                       <li
-                        className={
-                          splitLocation[1] === "about"
-                            ? "active"
-                            : ""
-                        }
+                        className={splitLocation[1] === "about" ? "active" : ""}
                       >
-                        <Link to={RoutePath.aboutUs} >
-                          About Us
-                        </Link>
+                        <Link to={RoutePath.aboutUs}>About Us</Link>
                       </li>
                       <li
-                        className={
-                          splitLocation[1] === "csr" ? "active" : ""
-                        }
+                        className={splitLocation[1] === "csr" ? "active" : ""}
                       >
-                        <Link to={RoutePath.corporateSocialResponsibility}>CSR</Link>
+                        <Link to={RoutePath.corporateSocialResponsibility}>
+                          CSR
+                        </Link>
                       </li>
                       <li
                         className={
@@ -177,7 +200,7 @@ const PageHeader = () => {
                           </li> */}
                     </ul>
                   ) : (
-                    ''
+                    ""
                   )}
                 </li>
               );
