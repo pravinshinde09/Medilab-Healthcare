@@ -8,7 +8,7 @@ const AreaOfServices = () => {
             <div class="container ">
                 <div class="row px-xl-50">
                     <div className="col-md-6 ">
-                        <img src={Images.Branch_1} />
+                        <img src={Images.Branch_1} alt='branch' />
                     </div>
                     <div class="col-md-6">
                         <h3 className='text-left mt-5'>Areas of Service</h3>

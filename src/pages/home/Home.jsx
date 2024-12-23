@@ -10,15 +10,11 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <div id="canvas">
-        <div id="box_wrapper">
-          <LozengesCarousel />
-          <ProductList maxProducts={4} showMore={true} />
-          <Categories />
-          <Clients />
-          <StickyForm />
-        </div>
-      </div>
+      <LozengesCarousel />
+      <Categories />
+      <ProductList maxProducts={4} showMore={true} />
+      <Clients />
+      <StickyForm />
     </>
   );
 };

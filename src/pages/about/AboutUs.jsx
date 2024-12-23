@@ -1,10 +1,9 @@
 import React from "react";
 import About from "./About"
-import Why_ChooseUS from "./Why_ChooseUS";
+import WhyChooseUS from "./WhyChooseUS";
 import Gallery from "./Gallery";
 import LocationMap from "./LocationMap";
 import Pramotors from "./Pramotors";
-import BreadCrumb from "../../components/common/BreadCrumb";
 import AreaOfServices from "./AreaOfServices";
 import OurMission from "./OurMission";
 import StickyForm from "../../components/common/StickyForm";
@@ -12,9 +11,8 @@ import StickyForm from "../../components/common/StickyForm";
 const AboutUs = () => {
   return (
     <>
-      <BreadCrumb label="About Us" />
       <About />
-      <Why_ChooseUS />
+      <WhyChooseUS />
       <AreaOfServices />
       <Pramotors />
       <OurMission />

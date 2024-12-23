@@ -1,16 +1,13 @@
-import React, { useState, useContext } from "react";
-import BreadCrumb from "../../../components/common/BreadCrumb";
+import React, { useState } from "react";
 import { ProductData } from "../../../constants/ProductData";
 import { useParams } from "react-router-dom";
 import ProductCard from "../product/ProductCard";
-import CartContext from "../../../context/cart/CartContext";
 import StickyForm from "../../../components/common/StickyForm";
 
 const ProductDetails = () => {
   const [productData] = useState(ProductData);
 
   const {id} = useParams();
-  // const Detail = ProductData.filter((x) => x.id === id.id);
   const Detail = productData.filter((x) => x.id === parseInt(id));
   const Product = Detail[0];
 
@@ -19,7 +16,6 @@ const ProductDetails = () => {
   }
 
   return (<>
-    <BreadCrumb label="Product" />
     <section className="ls s-py-xl-150 s-py-lg-130 s-py-md-90 s-py-60 c-gutter-30">
       <div className="container px-xl-50">
         <div className="row">

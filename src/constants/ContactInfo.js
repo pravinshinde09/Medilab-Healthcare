@@ -2,7 +2,6 @@ export const companyInfo = {
   email: "contact.medilabhealthcare@gmail.com",
   contactNo: "",
   officeHours: "9.00 am - 7.00 pm",
-  work: " A 93/2, Paithan MIDC, Aurangabad, 431148, Maharashtra.",
   address:
     "Medilab Healthcare Pvt. Ltd., Gat No. 64, Sawaradari, Opp. Philips, Chakan, Khed, Maharashtra, IN - 410 501",
   addressLink:

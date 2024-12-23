@@ -7,15 +7,8 @@ import InquiryFormModal from "./InquiryFormModal";
 import { useNavigate } from 'react-router-dom';
 import { RoutePath } from "../../../routes/RoutePaths";
 
-const getProductList = (data, maxLength) => {
-  if (maxLength === -1) {
-    return data;
-  }
-  return data.splice(0, maxLength);
-};
-
 const getFilteredProducts = (data, category, max) => {
-  let filteredData = data;
+  let filteredData = [];
 
   if (category !== "all") {
     filteredData = data.filter(item => item.Product_Category === category)
@@ -24,7 +17,7 @@ const getFilteredProducts = (data, category, max) => {
     filteredData = [...ProductData];
   }
 
-  return getProductList(filteredData, max);
+  return max === -1 ? filteredData : filteredData.splice(0, max);
 }
 
 const ProductList = ({ maxProducts = -1, showMore = false }) => {
@@ -36,7 +29,7 @@ const ProductList = ({ maxProducts = -1, showMore = false }) => {
 
   useEffect(() => {
     setData(getFilteredProducts([...ProductData], currentCategory, maxProducts));
-  }, [currentCategory])
+  }, [currentCategory, maxProducts])
   const navigate = useNavigate();
 
   return (
@@ -52,7 +45,7 @@ const ProductList = ({ maxProducts = -1, showMore = false }) => {
       <div className="divider-40 hidden-below-md"></div>
       <div className="divider-30 hidden-above-md"></div>
       <div className="product_tabs">
-        <ul className="nav nav-tabs" role="tablist">
+        <ul className="nav nav-tabs">
           {ProductCategory.map((item) => (
             <li className="nav-item active" key={item.id}>
               <a
@@ -63,7 +56,6 @@ const ProductList = ({ maxProducts = -1, showMore = false }) => {
                 role="tab"
                 aria-controls="tab01_pane"
                 aria-expanded="true"
-                initiallyVisible="all"
                 onClick={() => setCurrentCategory(item.id)}
               >
                 {item.label}
@@ -81,6 +73,7 @@ const ProductList = ({ maxProducts = -1, showMore = false }) => {
           aria-labelledby="tab01">
           {data.map((item) => (
             <ProductCard
+              key={item.id}
               name={item.name}
               id={item.id}
               category={item.category}
@@ -94,13 +87,12 @@ const ProductList = ({ maxProducts = -1, showMore = false }) => {
           showMore && (
             <div className="col-lg-1 col-md-1 col-sm-12 col-xs-12 text-center align-self-center">
               <ScrollAnimation animateIn="fadeIn" initiallyVisible={true} duration={2}>
-             
-                <a onClick={() => navigate(RoutePath.product)}>
                 <button
+                  type="button"
+                  onClick={() => navigate(RoutePath.product)}
                   style={{ border: "1px solid var(--light-red)", backgroundColor: "var(--light-red)", color: "white", borderRadius: "50%", height: "40px", width: "40px", cursor: "pointer" }}>
-                  <i class="fa fa-arrow-right" aria-hidden="true" style={{ marginBottom: "6px", marginLeft: "2px" }} />
+                  <i className="fa fa-arrow-right" aria-hidden="true" style={{ marginBottom: "6px", marginLeft: "2px" }} />
                 </button>
-                </a>
               </ScrollAnimation>
             </div>
           )

@@ -2,6 +2,56 @@ import { Images } from "../assets/images";
 export const ProductData = [
   {
     id: 1,
+    name: "Medisils cough-orange",
+    product_code: "LOZ/003",
+    image: Images.Product_3,
+    category: "Lozenges",
+    Product_Category: "PL/LOZ/003",
+    heading: "Each 2.5 gm Lozenges Contains:",
+    description: (
+      <p>
+        Menthol (Mentha piperita)Lf - 4.75 mg
+        <br />
+        Camphor (Cinnamomum camphora) - 0.25mg
+        <br />
+        Eucalyptus Oil (Eucalyptus globules)Lf - 1.44mg
+        <br />
+        Hard boiled candy base - q.s
+        <br />
+        Colour carmoisine
+      </p>
+    ),
+    uses: "Relieve symptoms such as sore throat, throat irritation, or cough",
+  },
+  {
+    id: 2,
+    name: "Strepsore Orange",
+    image: Images.Product_5,
+    product_code: "LOZ/003",
+    category: "Lozenges",
+    Product_Category: "PL/LOZ/003",
+    heading: "Each 2.5 Lozenge Contains:",
+    description: (
+      <p>
+        Menthol - 4.00mg
+        <br />
+        Eucalyptus - 0.75mg
+        <br />
+        Camphor - 0.19mg
+        <br />
+        Thymol - 0.10mg
+        <br />
+        Maleic Acid(E296) - Q.S
+        <br />
+        Flavour Orange - Q.S
+        <br />
+        Colour: Sunset Yellow FCF(E110) - Q.S
+      </p>
+    ),
+    uses: "Relieve symptoms such as Throats and Blocked Noses",
+  },
+  {
+    id: 3,
     name: "Strome Active Inhaler",
     product_code: "I/IH/002",
     image: Images.Product_1,
@@ -20,7 +70,7 @@ export const ProductData = [
     uses: "Strome active inhaler is used for Common cold,Cough and Headache.",
   },
   {
-    id: 2,
+    id: 4,
     name: "Strome Active Balm",
     product_code: "B/BL/001",
     image: Images.Product_2,
@@ -45,30 +95,7 @@ export const ProductData = [
     uses: "Strome active balm is used for headache,Body ache and cold remedy. Is one of the biggest pain management brand.",
   },
   {
-    id: 3,
-    name: "Ecosils cough-orange",
-    product_code: "LOZ/003",
-    image: Images.Product_3,
-    category: "Lozenges",
-    Product_Category: "PL/LOZ/004",
-    heading: "Each 2.5 gm Lozenges Contains:",
-    description: (
-      <p>
-        Menthol (Mentha piperita)Lf - 4.75 mg
-        <br />
-        Camphor (Cinnamomum camphora) - 0.25mg
-        <br />
-        Eucalyptus Oil (Eucalyptus globules)Lf - 1.44mg
-        <br />
-        Hard boiled candy base - q.s
-        <br />
-        Colour carmoisine
-      </p>
-    ),
-    uses: "Relieve symptoms such as sore throat, throat irritation, or cough",
-  },
-  {
-    id: 4,
+    id: 5,
     name: "Livton A to Z Tablets",
     image: Images.Product_4,
     product_code: "T/011",
@@ -103,33 +130,6 @@ export const ProductData = [
       </p>
     ),
     uses: "Reduces Anxiety and stress, Improve eyesight Boosts Immunity, help prevent iron deficiency.",
-  },
-  {
-    id: 5,
-    name: "Strepsore Orange",
-    image: Images.Product_5,
-    product_code: "",
-    category: "Lozenges",
-    Product_Category: "PL/LOZ/003",
-    heading: "Each 2.5 Lozenge Contains:",
-    description: (
-      <p>
-        Menthol - 4.00mg
-        <br />
-        Eucalyptus - 0.75mg
-        <br />
-        Camphor - 0.19mg
-        <br />
-        Thymol - 0.10mg
-        <br />
-        Maleic Acid(E296) - Q.S
-        <br />
-        Flavour Orange - Q.S
-        <br />
-        Colour: Sunset Yellow FCF(E110) - Q.S
-      </p>
-    ),
-    uses: "Relieve symptoms such as Throats and Blocked Noses",
   },
   {
     id: 6,
@@ -329,7 +329,6 @@ export const ProductData = [
     category: "Lozenges",
     Product_Category: "PL/LOZ/004",
     product_code: "",
-    Product_Category: "PL/LOZ/004",
     heading: "One Lozenge Gorpils 2.5g contains:",
     description: (
       <p>
@@ -353,7 +352,6 @@ export const ProductData = [
     category: "Lozenges",
     Product_Category: "PL/LOZ/004",
     product_code: "",
-    Product_Category: "PL/LOZ/004",
     heading: "One Lozenge Gorpils 2.5g contains:",
     description: (
       <p>

@@ -25,7 +25,7 @@ const PageHeader = () => {
             <nav className="top-nav">
               <ul className="nav sf-menu">
                 {PageHeaderLinks.map((item) => {
-                  const { isNested = false, nestedPaths = [] } = item;
+                  const { isNested = false } = item;
                   return (
                     <li
                       className={
@@ -128,7 +128,7 @@ const PageHeader = () => {
         <nav className="top-nav">
           <ul className="nav sf-menu">
             {PageHeaderLinks.map((item) => {
-              const { isNested = false, nestedPaths = [] } = item;
+              const { isNested = false } = item;
               return (
                 <li
                   className={`/${splitLocation[1]}` === item.to ? "active" : ""}
@@ -138,7 +138,7 @@ const PageHeader = () => {
                   aria-expanded="false"
                 >
                   <Link to={item.to}>
-                    <a>{item.label}</a>
+                    {item.label}
                   </Link>
 
                   {isNested && item.label === "Partner" ? (

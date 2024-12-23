@@ -4,18 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { companyInfo } from '../../constants/ContactInfo';
 import { RoutePath } from '../../routes/RoutePaths';
 import ScrollAnimation from 'react-animate-on-scroll';
-// import { useTranslation } from 'react-i18next';
-
-// const lngs = {
-//   en: { nativeName: 'English' },
-//   de: { nativeName: 'Deutsch' }
-// };
-
-// When the user scrolls down 20px from the top of the document, show the button
 
 const PageFooter = () => {
 	const navigate = useNavigate();
-	// const { i18n } = useTranslation();
 	return (<>
 
 		<footer className="page_footer text-center text-sm-left  ds ms s-pt-60 s-pb-60 s-pt-md-85 s-pb-md-90 s-pt-lg-125 s-pb-lg-130 s-pt-xl-150 s-pb-xl-145 c-gutter-30 s-parallax c-mb-50 c-mb-lg-0">
@@ -23,13 +14,9 @@ const PageFooter = () => {
 				<div className="row justify-content-center">
 					<div className="col-lg-5 col-md-6 col-sm-12 col-xs-12" >
 						<ScrollAnimation animateIn="fadeInLeft" initiallyVisible={true} duration={2} >
-							<a onClick={() => navigate(RoutePath.home)} className="logo">
-								<img src={Images.Logo} alt="img" />
-								<span className="d-flex flex-column">
-									<span className="logo-text color-darkgrey">Medilab</span>
-									<span className="logo-subtext">Healthcare Pvt Ltd</span>
-								</span>
-							</a>
+							<button type="button" onClick={() => navigate(RoutePath.home)} className="logo">
+								<img src={Images.Logo} alt="img" style={{ height: "100px"}}/>
+							</button>
 							<p className='text-justify' style={{ letterpacing: "1px" }}>
 								Driven by a mission to create a world of safe healthcare for a safer tomorrow, we are glad to introduce "MEDILAB' as a fully integrated pharmaceutical company with services extended from delivering Healthcare products to pharma mergers and acquisitions.
 							</p>

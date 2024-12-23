@@ -1,12 +1,10 @@
 import React from 'react';
 import { Images } from '../assets/images';
-import BreadCrumb from '../components/common/BreadCrumb';
 import StickyForm from '../components/common/StickyForm';
 
 const CorporateSocialResponsibility = () => {
   return (
     <>
-      <BreadCrumb label="Corporate Social Responsibility" />
       <section className="ls no-sidebar s-py-60 c-gutter-60">
         <div className="container px-xl-50">
           <div className="row">
@@ -25,7 +23,7 @@ const CorporateSocialResponsibility = () => {
               </article>
             </main>
             <div className="col-lg-4 col-md-4 col-xs-12 col-sm-12 align-self-center">
-              <img src={Images.CSR} className="img-thumbnail img-responsive" alt='csr image' />
+              <img src={Images.CSR} className="img-thumbnail img-responsive" alt='csr' />
             </div>
           </div>
         </div>

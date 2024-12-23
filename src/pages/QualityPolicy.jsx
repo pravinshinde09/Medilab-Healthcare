@@ -1,11 +1,9 @@
 import React from "react";
-import BreadCrumb from "../components/common/BreadCrumb";
 import StickyForm from "../components/common/StickyForm";
 
 const QualityPolicy = () => {
   return (
     <>
-      <BreadCrumb label="Quality Policy" />
       <section className="ls s-py-xl-150 s-py-lg-130 s-py-md-90 s-py-60">
         <div className="container px-xl-50">
           <div className="row">

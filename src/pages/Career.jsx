@@ -1,6 +1,5 @@
 import React from 'react';
 import { map } from "lodash";
-import BreadCrumb from '../components/common/BreadCrumb'
 import { About } from '../assets/images/about';
 import Upload from '../components/Upload';
 
@@ -29,11 +28,10 @@ const StandPartData = [
 const Career = () => {
   return (
     <>
-      <BreadCrumb label="Carrer" />
       <section className="container px-xl-50">
         <div className="ptb-50">
           <div className="card img-fluid">
-            <img className="card-img-top" src={About.back} style={{ height: "400px" }} />
+            <img alt='career' className="card-img-top" src={About.back} style={{ height: "400px" }} />
             <div className="card-img-overlay text-center mt-5">
               <h4 className="card-title" style={{ color: 'white' }}>Together Is Better.</h4>
               <p className="card-text">As we continue to grow and expand, we are very sure that we'll soon work together.</p>

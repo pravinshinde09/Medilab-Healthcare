@@ -7,7 +7,7 @@ const LozengesCarousel = () => {
   return (
     <section
       id="about"
-      className="ls section-about s-pt-xl-140 s-pt-lg-120 s-pt-md-80 s-pt-50 text-center text-sm-left"
+      className="ls section-about s-py-xl-100 s-py-lg-100 s-py-md-80 s-py-50 text-center text-sm-left"
     >
       <div className="container px-xl-50">
         <div className="row">
@@ -29,24 +29,20 @@ const LozengesCarousel = () => {
               on-the-go care.
             </p>
             <div className="divider-50 hidden-below-md"></div>
-            <Link to="" className="btn btn-maincolor medium-btn">
+            <Link to="/lozenges" className="btn btn-maincolor medium-btn">
               View More
             </Link>
           </div>
 
           {/* Carousel */}
           <div className="col-md-6">
-            <Carousel
-             interval={3000} 
-             controls={false} 
-             indicators={false} 
-            >
+            <Carousel interval={3000} controls={false} indicators={false}>
               {LOZENGES.map((lozenge) => (
                 <Carousel.Item key={lozenge.id}>
                   <img
                     className="d-block w-100 carousel-img"
                     src={lozenge.url}
-                    alt={`Lozenge Image ${lozenge.id}`}
+                    alt={lozenge.id}
                   />
                 </Carousel.Item>
               ))}

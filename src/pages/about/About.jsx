@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -18,9 +17,9 @@ const About = () => {
           <div className="divider-30 hidden-above-md"></div>
           <p className="text-justify">
             MEDILAB HEALTHCARE is a research-focused formulation firm
-            established in MUMBAI, India to produce complex generics of the
+            established in Pune, India to produce complex generics of the
             highest quality. Our efforts are specially focused on Ayurvedic,
-            Nutraceuticals,Pharmaceuticals, as well as novel drug delivery
+            Nutraceuticals,Pharmaceuticals as well as novel drug delivery
             platforms.
           </p>
           <p className="text-justify">
@@ -32,7 +31,6 @@ const About = () => {
           </p>
           <div className="divider-50 hidden-below-md"></div>
           <div className="divider-30 hidden-above-md"></div>
-          {/* <Link to="/about" className="btn btn-maincolor medium-btn">learn more</Link> */}
         </div>
         <div className="col-md-6 col-sm-12 col-lg-6 col-xs-12 about-img">
           {/* <img src={Images.b14} className="center d-block-none"/> */}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Icons } from "../../assets/images/icons";
 
-const Why_ChooseUS = () => {
+const WhyChooseUS = () => {
   return (
     <section className="ls s-py-xl-150 s-py-lg-130 s-py-md-90 s-py-60 px-xl-50">
       <div className="container px-xl-50">
@@ -83,4 +83,4 @@ const Why_ChooseUS = () => {
   );
 };
 
-export default Why_ChooseUS;
+export default WhyChooseUS;

@@ -1,6 +1,6 @@
 import Product_1 from './inhaler.jpg';
 import Product_2 from './Balm2.jpg';
-import Product_3 from './eco.jpg';
+import Product_3 from './Medisils.jpg';
 import Product_4 from './liv.jpg'
 import Product_5 from './Sterpsore.jpg';
 import Product_6 from './sterpsore1.jpg';

@@ -7,9 +7,7 @@ import { About } from './about';
 import { CSR } from './csr';
 import { globalPresence } from './globalPresence';
 
-
 export const Images = {
-
   Logo: Logo,
   ...Clients,
   ...Icons,

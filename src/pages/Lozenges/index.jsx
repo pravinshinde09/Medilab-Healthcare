@@ -1,14 +1,12 @@
 import React from "react";
-import Banner from "./Banner";
 import LozengesCard from "./LozengesCard";
-import IndustryVideo from "./IndustryVideo";
+import Manufacturing from "./Manufacturing";
 
 const Lozenges = () => {
   return (
     <div>
-      <Banner/>
       <LozengesCard/>
-      <IndustryVideo/>
+      <Manufacturing />
     </div>
   );
 };

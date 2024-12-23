@@ -106,7 +106,7 @@ const InquiryFormModal = ({ show, setShow }) => {
               />
               <label
                 className="form-check-label"
-                for="personal"
+                htmlFor="personal"
                 style={{ cursor: "pointer" }}
               >
                 Personal
@@ -124,7 +124,7 @@ const InquiryFormModal = ({ show, setShow }) => {
               />
               <label
                 className="form-check-label"
-                for="corporate"
+                htmlFor="corporate"
                 style={{ cursor: "pointer" }}
               >
                 Corporate
@@ -135,8 +135,7 @@ const InquiryFormModal = ({ show, setShow }) => {
             onSubmit={formik.handleSubmit}
             className="contact-form c-mb-100 c-gutter-100 p-4"
           >
-            <label htmlFor="fullName"></label>
-            {value == "personal" ? (
+            {value === "personal" ? (
               <input
                 id="fullName"
                 name="fullName"
@@ -160,7 +159,6 @@ const InquiryFormModal = ({ show, setShow }) => {
               {formik.touched.fullName && formik.errors.fullName}
             </div>
             <br />
-            <label htmlFor="email"></label>
             <input
               id="email"
               name="email"
@@ -174,7 +172,6 @@ const InquiryFormModal = ({ show, setShow }) => {
               {formik.touched.email && formik.errors.email}
             </div>
             <br />
-            <label htmlFor="phone"></label>
             <input
               id="phone"
               name="phone"
@@ -208,9 +205,7 @@ const InquiryFormModal = ({ show, setShow }) => {
                 style={{ cursor: "pointer" }}
               >
                 Submit
-                <i className="fa fa-download" style={{ marginLeft: "0.5rem" }}>
-                  &nbsp;
-                </i>
+                <i className="fa fa-download" style={{ marginLeft: "0.5rem" }} />
               </button>
             </div>
           </form>
